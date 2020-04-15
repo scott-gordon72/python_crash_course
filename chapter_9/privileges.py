@@ -31,14 +31,33 @@ class Admin(User):
         Initialize parent class attributes and Admin specific attributes
         """
         super().__init__(first_name, last_name, age, height, weight)
-        self.privileges = ['can add post', 'can delete post', 'can ban user']
+
+        self.privileges = Privileges()
+
+
+class Privileges():
+    """A class to store an admin's privileges."""
+
+    def __init__(self, privileges=[]):
+        self.privileges = privileges
 
     def show_privileges(self):
-        """Method to show privileges allowed to the admin"""
-        print(f"\n{self.first_name} has these privileges:")
-        for privilege in self.privileges:
-            print(f"\t-{privilege}")
+        print("\nPrivileges:")
+        if self.privileges:
+            for privilege in self.privileges:
+                print(f"- {privilege}")
+        else:
+            print("- This user has no privileges.")
 
 
-admin = Admin('scott', 'gordon', 48, 72, 285)
-admin.show_privileges()
+scott = Admin('scott', 'gordon', 48, 72, 285)
+scott.describe_user()
+
+scott.privileges.show_privileges()
+
+print("\nAdding privileges...")
+scott_privileges = ['can reset passwords', 'can moderate discussions',
+                    'can suspend accounts',
+                    ]
+scott.privileges.privileges = scott_privileges
+scott.privileges.show_privileges()
