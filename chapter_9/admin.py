@@ -1,3 +1,4 @@
+"""A module for creating admin"""
 from privileges import Privileges
 from user import User
 

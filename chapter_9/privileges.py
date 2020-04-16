@@ -1,3 +1,6 @@
+"""Module for creating privileges"""
+
+
 class Privileges():
     """A class to store an admin's privileges."""
 

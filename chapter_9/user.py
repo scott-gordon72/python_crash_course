@@ -1,3 +1,6 @@
+"""A module to create users"""
+
+
 class User:
     """A simple attempt to model a user"""
 
