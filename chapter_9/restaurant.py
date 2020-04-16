@@ -13,8 +13,3 @@ class Restaurant:
     def open_restaurant(self):
         """Prints that the restaurant is open"""
         print(f"{self.restaurant_name.title()} is open")
-
-
-restaurant = Restaurant('il camino', 'italian')
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
