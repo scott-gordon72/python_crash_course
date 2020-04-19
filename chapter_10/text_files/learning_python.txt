@@ -1,0 +1,6 @@
+In python you can read data to files
+In python you can write data to files
+In python you can store structures like lists in data files
+In python you can read an entire line at once
+In python you can store the line in a list
+In python you can write to an empty file
