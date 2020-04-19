@@ -1,4 +1,4 @@
-filename = 'poll_response.txt'
+filename = 'chapter_10/text_files/poll_response.txt'
 while True:
     answer = input("Why do you like programming so much?: ")
     print(f"Type 'q' to quit ")

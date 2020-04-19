@@ -1,4 +1,4 @@
-filename = 'guest_book.txt'
+filename = 'chapter_10/text_files/guest_book.txt'
 
 while True:
     name = input("What is your name: ")
