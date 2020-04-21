@@ -9,4 +9,4 @@ for filename in filenames:
             print(lines)
 
     except FileNotFoundError:
-        print(" Sorry, I can't find that file.")
+        pass
