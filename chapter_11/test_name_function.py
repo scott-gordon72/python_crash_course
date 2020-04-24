@@ -1,3 +1,5 @@
+"Unit test for get_formatted_name function"""
+
 import unittest
 from name_function import get_formatted_name
 
